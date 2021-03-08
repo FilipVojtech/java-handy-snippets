@@ -30,7 +30,7 @@ import java.util.Scanner;
 /**
  * Handy Snippets Console package
  */
-public final class HSConsole {
+public final class HSConsoleInput {
     static Scanner sc = new Scanner(System.in);
 
     /**
