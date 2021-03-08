@@ -30,6 +30,13 @@ public final class HSConsoleOutput {
             System.out.println(string);
     }
 
+    public static void printMultiple(String[] array, String delimiter) {
+        for (int i = 0; i < array.length; i++) {
+            if (i == array.length - 1) System.out.print(array[i]);
+            else System.out.print(array[i] + delimiter);
+        }
+    }
+
     public static void printMultiple(String[][] arrayOfArrays) {
         for (String[] array : arrayOfArrays) {
             for (String string : array) {
