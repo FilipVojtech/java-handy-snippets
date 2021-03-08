@@ -25,8 +25,8 @@ SOFTWARE.
 package cz.polygonunicorn.javahandysnippets;
 
 public final class HSConsoleOutput {
-    public static void printMultiple(String[] arrayOfArrays) {
-        for (String string : arrayOfArrays)
+    public static void printMultiple(String[] array) {
+        for (String string : array)
             System.out.println(string);
     }
 
