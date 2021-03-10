@@ -43,7 +43,7 @@ public final class HSConsoleInput {
         int i;
         try {
             i = sc.nextInt();
-        } catch (InputMismatchException mismatchException) {
+        } catch (NumberFormatException formatException) {
             System.out.println(errorMessage);
             i = getInt(errorMessage);
         }
@@ -63,8 +63,8 @@ public final class HSConsoleInput {
         if (nextLine) System.out.println(inputMessage);
         else System.out.print(inputMessage);
         try {
-            i = sc.nextInt();
-        } catch (InputMismatchException mismatchException) {
+            i = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException formatException) {
             System.out.println(errorMessage);
             i = getInt(inputMessage, nextLine, errorMessage);
         }
